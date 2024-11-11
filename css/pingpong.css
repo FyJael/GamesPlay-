@@ -1,0 +1,13 @@
+body {
+     align-items: center;
+     flex-direction: row;
+     margin-top: 10%;
+    
+}
+
+
+canvas {
+    background: rgb(255, 238,255,0.51111111111111);
+    margin-bottom: 20%;
+    margin-left: 30%;
+}

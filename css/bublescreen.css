@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+body{
+    background-color:#154367;
+  
+}
+
+h2{ 
+    position: absolute;
+    font-size:2em;
+    color: #eee;
+    text-shadow: 0 0 10px #00e1ff,0 0 10px #00e1ff,0 0 10px #00e1ff,0 0 10px #00e1ff;
+    top: 30px;
+    left: 30px;
+}
+
+body span{
+    position: absolute;
+    bottom: -50px;
+    background: transparent;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: inset 0 0 10px #00e1ff;
+    animation: animate 4s linear infinite;
+}
+body span::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: scale(0.25) translate(-70%,-70%);
+    background: radial-gradient(#00e1ff,transparent);
+    border-radius: 50%;
+}
+@keyframes animate{
+    0%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    99%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-1200%);
+        opacity: 0;
+    }
+}
+
+.main{
+    width: 100%; 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.box{
+    width: 200px;
+    height: 60px;
+    background-color: rgb(31, 31, 31);
+    position: relative;
+    z-index: 1;
+}
+.box::before,.box::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(-45deg,#ff0000,#00f0f0,#00ff00,#0000ff,#ff0000,#00f0f0,#00ff00,#0000ff,#f00f0f);
+    width: 100%;
+    height: 100%;
+    transform: scale(1.02);
+    z-index: -1;
+    background-size: 500%;
+    animation: animation 20s linear infinite;
+}
+.box::after{
+    filter:blur(20px);
+}
+@keyframes animation{
+    0%{background-position: 0 0;}
+    50%{background-position: 300% 0;}
+    100%{background-position: 0 0;}
+}
+/*------------------- style bouton -------------------*/
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn1{
+    border-radius: 5px;
+    background-color: #000a39;
+    border: none;
+    padding: 10px;
+    width: 200px;
+    height: 60px;
+    transition: all 0.6s;
+    font-size: 20px;
+    color: #ffffff;
+  
+}
+.btn1 .span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.btn1 .span:after{
+    content: " >>";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -30px;
+    transition: 0.6s;
+    color: #ffab1a;
+}
+.btn1:hover .span{
+    padding-right: 40px;
+}
+.btn1:hover .span:after{
+    opacity: 1;
+    right: 0;
+}

@@ -1,0 +1,77 @@
+section{
+    padding: 100px;
+}
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.row .col50{
+    position: relative;
+    width: 48%;
+    justify-content: center;
+    align-items: center;
+}
+.row .col50 h2{
+    margin-bottom: 20px;
+}
+.titre-text{
+    color: #000;
+    font-size: 2em;
+    font-weight: 300px;
+    text-transform: capitalize;
+}
+.titre-text h5{
+    color: #eee;
+    text-shadow: 0 0 10px #00e1ff,0 0 10px #00e1ff,0 0 10px #00e1ff,0 0 10px #00e1ff;
+    font-size: 1.5em;
+    font-weight: 700px;
+}
+.row .col50 img{
+    height: 450px;
+    width: 600px;
+    position: relative;
+}
+.titre{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.menu{
+    margin-top: -100px;
+}
+.menu .contenu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.menu .contenu .box2{
+    width: 320px;
+   margin: 20px;
+}
+.menu .contenu .box2 .imgbox{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.menu .contenu .box2 .imgbox img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.menu .contenu .box2 .content{
+    text-align: center;
+    font-weight: 300px;
+    color: #111;
+}
+.menu .contenu .box2 .text h3{
+    font-weight: 400px;
+}
+

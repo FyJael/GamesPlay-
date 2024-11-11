@@ -1,0 +1,28 @@
+﻿body{
+    background: radial-gradient(#00e1ff,#154367);
+}
+#collage{
+    margin:10%;
+    margin-top: 5%;
+}
+h2{
+    font-weight:normal;
+    text-align:center;
+}
+h3{
+    font-weight:normal;
+    margin:3px 0px;
+    text-align:center;
+}
+hr{
+    margin-top: 1%;
+}
+/* #btnRule #newPhoto{
+    cursor: pointer;
+} */
+#newPhoto:hover{
+    background-color: #81aac7;
+}
+#btnRule:hover{
+    background-color:#81aac7;
+}

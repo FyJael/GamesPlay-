@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../fontawesome-free-5.15.4-web/css/solid.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../icon/icon.png"/>
+    <link rel="stylesheet" href="../css/morpion.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <title>GamePlay >></title>
+</head>
+<body>
+    <div class="navbar">
+        <header>
+            <div class="logo">
+                <a href="../index.html" class="logo"> <h2>GamePlay >> </h2></a>
+            </div>
+            <div class="menutoggle"  onclick="toggleMenu();"></div>
+            <ul class="navbar" >
+                <li><a href="../index.html"  onclick="toggleMenu();">Home</a></li>
+                <li><a href="../index.html"  onclick="toggleMenu();">Games</a></li>
+                <li><a href="../index.html"  onclick="toggleMenu();">Future</a></li>
+                <li><a href="../index.html"  onclick="toggleMenu();">A propos</a></li>
+                
+            </ul>
+           
+        </header>
+
+    </div>
+
+       
+
+     <!-------- le jeu morpion en question ---------->
+    <div class="body">
+        <div class="card">
+            <div class="imgBx">
+                <img src="../images/morpion.jpg" alt="images">
+                <img src="../images/morpion.jpg" alt="">
+            </div>
+            <div class="details">
+                <div class="content">
+                    <h1> Tic tac toe </h1>
+                    <div id="grid">
+                        <div id="c1" class="case"></div>
+                        <div id="c2" class="case"></div>
+                        <div id="c3" class="case"></div>
+                        <div id="c4" class="case"></div>
+                        <div id="c5" class="case"></div>
+                        <div id="c6" class="case"></div>
+                        <div id="c7" class="case"></div>
+                        <div id="c8" class="case"></div>
+                        <div id="c9" class="case"></div>
+                    </div>
+                    <div id="score">
+                        <p>Player number <span id="joueur">1</span>  </p>
+                        <p>Score player 1 : <span id="score1">0</span> </p>
+                        <p>Score player 2 : <span id="score2">0</span> </p>
+                        <p>Equality : <span id="scoreNul">0</span> </p>
+                    </div>
+                    <script src="../js/morpion.js"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+     <!-------- Footer ---------->
+     <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <P>Download  App for Android and ios mobile phone.</P>
+                    <div class="app-logo">
+                        <img src="../images/app-store.png" >
+                        <img src="../images/play-store.png" >
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <div class="logo">
+                        <a href="../index.html" class="logo"> <h1>GamePlay >> </h1></a>
+                    </div>
+                    <P>Our goal is to please you with all our games.</P>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful links</h3>
+                    <ul class="foot">
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliaty</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Useful links</h3>
+                    <ul class="foot">
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footline">
+            <p class="copyright">Copyright 2022 - IGGLIA 2 </p>
+        </div>
+    </div>
+
+
+   
+   
+     <!-- js por le meunu -->
+     <script>
+        window.addEventListener('scroll', function(){
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0 );
+        });
+
+        function toggleMenu(){
+            const menutoggle = document.querySelector(".menutoggle");
+            const navbar = document.querySelector(".navbar");
+            menutoggle.classList.toggle('active');
+            navbar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

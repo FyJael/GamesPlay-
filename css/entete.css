@@ -1,0 +1,104 @@
+.navbar{
+    display: flex;
+    align-items: center;
+  
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: #555;
+}
+p{
+    color: #eee;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 0px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 10px 0;
+    margin-left: 30px;
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 62px;
+    margin: 25px 0;
+}
+
+
+.header{
+    background: radial-gradient(#00e1ff,#154367);
+    padding: 3%;
+}
+.header .row{
+    margin-top: 70px ;
+}
+
+/*------------------------- 3e patrie du bodySlide animation -------------------------------*/
+
+.slider{
+	width: 300px;
+	overflow:hidden;
+    margin:20%;
+    border-radius: 40px;
+    border: #000;
+}
+.slide img{
+    width:300px;
+    height: 300px;
+    margin: 0;
+}
+.slides{
+    width: calc(300px * 30);
+    animation: glisse 30s infinite;
+}
+.slides:hover{
+    animation-play-state: initial;
+    cursor: pointer;
+}
+.slide{
+    float: left;
+    height: 300px;
+}
+
+@keyframes glisse{
+    0%{ transform: translateX(0);}
+    10%{ transform: translateX(0px);}
+    20%{ transform: translateX(-300px);}
+    30%{ transform: translateX(-600px);}
+    40%{ transform: translateX(-900px);}
+    50%{ transform: translateX(-1200px);}
+    60%{ transform: translateX(-1500px);}
+    70%{ transform: translateX(-1800px);}
+    80%{ transform: translateX(-2100px);}
+    90%{ transform: translateX(-2400px);}
+    100%{ transform: translateX(-2700px);}
+}
+
+
+
+

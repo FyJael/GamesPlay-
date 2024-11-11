@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="shortcut icon" type="image/x-icon" href="icon/icon.png"/>
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/bublescreen.css">
+    <link rel="stylesheet" href="css/Gamecontainer.css">
+    <link rel="stylesheet" href="css/carte.css">
+    <link rel="stylesheet" href="css/entete.css">
+    <link rel="stylesheet" href="css/about.css">
+    <title>GamePlay >></title>
+    
+
+    
+    <script src="js/bublescreen.js"></script>
+     <!-- js por le meunu -->
+     <script>
+        window.addEventListener('scroll', function(){
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0 );
+        });
+
+        function toggleMenu(){
+            const menutoggle = document.querySelector(".menutoggle");
+            const navbar = document.querySelector(".navbar");
+            menutoggle.classList.toggle('active');
+            navbar.classList.toggle('active');
+        }
+    </script>
+    
+</head>
+<body>
+
+     <!-----------------  barre de navigation ----------------->
+    
+       
+   
+
+     <div class="header" id="home">
+        <div class="container">
+    
+            <div class="navbar">
+                <header>
+                    <div class="logo">
+                        <a href="index.html" class="logo"> <h2>GamePlay >> </h2></a>
+                    </div>
+                    <div class="menutoggle"  onclick="toggleMenu();"></div>
+                    <ul class="navbar" >
+                        <li><a href="#home"  onclick="toggleMenu();">Home</a></li>
+                        <li><a href="#games"  onclick="toggleMenu();">Games</a></li>
+                        <li><a href="#future"  onclick="toggleMenu();">Future</a></li>
+                        <li><a href="#apropos"  onclick="toggleMenu();">About</a></li>
+                        
+                    </ul>
+                   
+                </header>
+        
+            </div>
+            <div class="row" >
+                <div class="col-2">
+                    <h1>Let's go back to <br> The Classics!</h1>
+                    <p>Full your time break with games. We don't need to move off our chair to make ourself fun.
+                        GamePlay the solution of boredness and brain developement and stimulation :) .
+                    </p>
+                        <br><br>
+                        <div class="box">
+                            <a href="#games"><button class="btn1"><h3 class="span">Start now</h3></button></a>
+                        </div>
+                </div>
+                <div class="col-2">
+                    <div class="slider">
+                        <div class="slides ">
+                
+                           
+                            <div class=" slide"><img src="images/morpion.jpg"/></div>
+                            <div class=" slide"><img src="images/puzzle.jpg"/></div>
+                            <div class=" slide"><img src="images/dominoes.jpg"/></div>
+                            <div class=" slide"><img src="images/pierre feuille sciseau.jpg"/></div>
+                            <div class=" slide"><img src="images/echec.jpg"/></div>
+                            <div class=" slide"><img src="images/memory card.jpg"/></div>
+                            <div class=" slide"><img src="images/quiz.jpg"/></div>
+                            <div class=" slide"><img src="images/memory card.jpg"/></div>
+                            <div class=" slide"><img src="images/pierre feuille.jpg"/></div>
+                            <div class=" slide"><img src="images/ping pong.jpg"/></div>
+                            <div class=" slide"><img src="images/red jump.jpg"/></div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+        </div>
+        
+        <br><br><br><br><br><br>
+    
+    <!-----------------  LIste des jeux  dispo ----------------->
+
+
+    <section class="menu">
+        <div class="titre">
+         
+                <h1 class="titre-text"  id="games">Games</h1>
+                <p>Choose one of those card to start the game </p>
+
+                     <!-----------------  premiere ligne ----------------->
+            <div class="contenu" >
+                <div class="box2">
+                    <div class="imgbox">
+                        <img src="images/puzzle.jpg" alt="image">
+                    </div>
+                    <div class="content">
+                        <h3>Puzzle</h3>
+                        <p>
+                            The faster you finish, more fun you will have fun 
+                        </p> <br>
+                        <a href="pages/puzzle.html"><button class="btn1"><h3 class="span">Play</h3></button></a>
+                    </div>
+                </div>
+                <div class="box2">
+                    <div class="imgbox">
+                        <img src="images/quiz.jpg" alt="image">
+                    </div>
+                    <div class="content">
+                        <h3>Quiz</h3>
+                        <p>
+                            Make sure you align your sign and block your opponent
+                        </p>
+                        <a href="pages/Quizz.html"><button class="btn1"><h3 class="span">Play</h3></button></a>
+                    </div>
+                </div>
+                <div class="box2">
+                    <div class="imgbox">
+                        <img src="images/morpion.jpg" alt="image">
+                    </div>
+                    <div class="content">
+                        <h3>Morpion</h3>
+                        <p>
+                            Make sure you align your sign and block your opponent
+                        </p>
+                        <a href="pages/morpion.html"><button class="btn1"><h3 class="span">play</h3></button></a>
+                    </div>
+                </div> 
+                
+                          <!----------------- deuxieme ligne ----------------->
+            <div class="contenu">
+                <div class="box2">
+                    <div class="imgbox">
+                        <img src="images/red jump.jpg" alt="image">
+                    </div>
+                    <div class="content">
+                        <h3>jump</h3>
+                        <p>
+                            Make sure you align your sign and block your opponent
+                        </p>
+                        <a href="pages/jump.html"><button class="btn1"><h3 class="span">Play</h3></button></a>
+                    </div>
+                </div>
+                <div class="box2">
+                    <div class="imgbox">
+                        <img src="images/ping pong.jpg" alt="image">
+                    </div>
+                    <div class="content">
+                        <h3>Ping pong</h3>
+                        <p>
+                           Do not hurry ,but be fast and focus
+                        </p> <br>
+                        <a href="pages/pingpong.html"><button class="btn1"><h3 class="span">Play</h3></button></a>
+                    </div>
+                </div>
+                <div class="box2">
+                    <div class="imgbox">
+                        <img src="images/pierre feuille sciseau.jpg" alt="image">
+                    </div>
+                    <div class="content">
+                        <h3>R..P..S</h3>
+                        <p>
+                           May chance stand by you all the time
+                        </p> <br>
+                        <a href="pages/pps.html"><button class="btn1"><h3 class="span">play</h3></button></a>
+                    </div>
+                </div> 
+                
+            </div>
+        </div>
+
+    </section>
+
+      <!-----------------  LIste des jeux  future ----------------->
+
+      <section class="menu" >
+        <div class="titre" id="future">
+                <h1 class="titre-text">Future Games</h1>
+                <p>You will see thoses new games very soon</p>
+            <div class="contenu">
+                <div class="box2">
+                    <div class="imgbox">
+                        <img src="images/memory card.jpg" alt="image">
+                    </div>
+                    <div class="content">
+                        <br> <h3>Memory card</h3>
+                        <p>
+                           Flip the cards and find his partener
+                        </p>
+                       
+                    </div>
+                </div>
+                <div class="box2">
+                    <div class="imgbox">
+                        <img src="images/dominoes.jpg" alt="image">
+                    </div>
+                    <div class="content">
+                        <br><h3>Dominoes</h3> 
+                        <p>
+                           Make sure to play your biggest number first
+                        </p>
+                        
+                    </div>
+                </div>
+                <div class="box2">
+                    <div class="imgbox">
+                        <img src="images/echec.jpg" alt="image">
+                    </div>
+                    <div class="content">
+                    <br> <h3>Echec</h3> 
+                        <p>
+                            Strike first, Strike hard ,.....
+                            Do not let your opponent the oportunity to see you come.
+                        </p>
+                        
+                    </div>
+                </div>               
+                
+            </div>
+        </div>
+
+    </section>
+        <!-------about section starts---------->
+        
+        <section class="about" id="apropos">
+           
+
+            <div class="row">
+
+                <div class="image">
+                    <img src="images/pierre feuille.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <h1 class="head"> About us </h1>
+                   
+                    <p>     <h3>GamePlay</h3> is a Lorem ipsum place with dolor sit amet consectetur adipisicing elit. 
+                        Vitae consectetur natus laudantium? Quam, illo odit. Dignissimos nam necessitatibus,
+                         delectus libero, animi eos fugit recusandae, 
+                        dolor magni obcaecati repudiandae consectetur expedita?</p>
+                    <a href="#Games" class="btn">Play</a>
+                </div>
+
+            </div>
+        </section>
+
+
+     <!-------- Footer ---------->
+     <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <P>Download  App for Android and ios mobile phone.</P>
+                    <div class="app-logo">
+                        <img src="images/app-store.png" >
+                        <img src="images/play-store.png" >
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <div class="logo">
+                        <a href="index.html" class="logo"> <h1>GamePlay >> </h1></a>
+                    </div>
+                    <P>Our goal is to please you with all our games.</P>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful links</h3>
+                    <ul class="foot">
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliaty</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Useful links</h3>
+                    <ul class="foot">
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footline">
+            <p class="copyright">Copyright 2022 - IGGLIA 2 </p>
+        </div>
+    </div>
+
+
+   
+</body>
+</html>
